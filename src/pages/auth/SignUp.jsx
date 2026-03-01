@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect, Suspense } from 'react'
-import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai'
@@ -10,6 +9,7 @@ import { saveAuthData } from '../../utils/auth'
 import { API_URL } from '@/utils/env'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
+import { motion } from 'framer-motion'
 
 function SignUpContent() {
   const router = useRouter()
@@ -23,9 +23,6 @@ function SignUpContent() {
   })
   const [showPassword, setShowPassword] = useState(false)
   const [agreedToPolicies, setAgreedToPolicies] = useState(false)
-  const [confirmedVoluntary, setConfirmedVoluntary] = useState(false)
-  const [confirmedAdult, setConfirmedAdult] = useState(false)
-  const [confirmedPhotosOwned, setConfirmedPhotosOwned] = useState(false)
   const [loading, setLoading] = useState(false)
   const [errors, setErrors] = useState({})
 

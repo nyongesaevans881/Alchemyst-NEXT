@@ -1,11 +1,10 @@
 "use client"
 
 import { useState } from "react"
-import { motion } from "framer-motion"
 import { AiOutlineWallet, AiOutlinePlus, AiOutlineReload } from "react-icons/ai"
 import MpesaPayment from "./MpesaPayment"
 
-export default function WalletBalanceCard({ userData, updateUserData, refreshBalance, balanceLoading }) {
+export default function WalletBalanceCard({ userData, refreshBalance, balanceLoading }) {
   const [showMpesaPopup, setShowMpesaPopup] = useState(false)
   const [customAmount, setCustomAmount] = useState("")
   const [showCustomInput, setShowCustomInput] = useState(false)
@@ -25,7 +24,7 @@ export default function WalletBalanceCard({ userData, updateUserData, refreshBal
     }
   }
 
-  const handlePaymentSuccess = async (transactionData) => {
+  const handlePaymentSuccess = async () => {
     // Refresh balance from database
     await refreshBalance()
     setCustomAmount("")

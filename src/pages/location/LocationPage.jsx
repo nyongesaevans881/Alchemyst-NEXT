@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { FiArrowLeft } from 'react-icons/fi'
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 import ProfileCard from '../../components/ProfileCard'
 import SpaCard from '../../components/SpaCard'
 import { IoStarOutline } from 'react-icons/io5'
@@ -22,7 +22,6 @@ export default function LocationPage({ params: initialParams }) {
     setParams(initialParams)
   }, [initialParams])
 
-  const dispatch = useDispatch()
   const [bgImage, setBgImage] = useState('https://res.cloudinary.com/dowxcmeyy/image/upload/v1760969542/alchemyst-escorts_e0cdbo.png')
 
   // ✅ Smart parsing - no manual mappings needed!
@@ -44,7 +43,7 @@ export default function LocationPage({ params: initialParams }) {
   }, [county])
 
   // Get data from Redux store - updated to match new structure
-  const { allProfiles, filteredProfiles, filteredSpas, loading } = useSelector(state => state.profiles)
+  const { allProfiles, loading } = useSelector(state => state.profiles)
 
   const [locationsList, setLocationsList] = useState([])
   const [areasList, setAreasList] = useState([])

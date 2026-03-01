@@ -4,7 +4,6 @@ import { useState } from "react"
 import { BsWhatsapp } from "react-icons/bs"
 import { toast } from "react-hot-toast"
 import { API_URL } from "@/utils/env"
-import { motion } from "framer-motion"
 
 export default function SpaCard({ profile }) {
   const router = useRouter()

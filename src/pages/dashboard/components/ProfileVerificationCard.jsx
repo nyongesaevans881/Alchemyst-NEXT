@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import { motion } from "framer-motion"
 import toast from "react-hot-toast"
 import { AiOutlineIdcard, AiOutlineCheckCircle, AiOutlineWhatsApp } from "react-icons/ai"
 import { API_URL } from '@/utils/env'

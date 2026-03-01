@@ -29,7 +29,7 @@ export const getAuthData = () => {
         if (rawUser && rawUser !== "undefined" && rawUser !== "null") {
             user = JSON.parse(rawUser);
         }
-    } catch (error) {
+    } catch (_) {
         console.warn("Invalid user data in storage, clearing...");
         localStorage.removeItem(AUTH_KEYS.USER);
     }

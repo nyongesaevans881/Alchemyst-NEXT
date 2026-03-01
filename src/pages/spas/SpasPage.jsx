@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
-import { motion } from "framer-motion"
 import { FiSearch, FiMapPin, FiRefreshCw, FiFilter, FiChevronDown, FiChevronUp } from "react-icons/fi"
 
 import { useProfiles } from "../../hooks/useProfiles"

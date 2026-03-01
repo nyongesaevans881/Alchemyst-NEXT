@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { motion, AnimatePresence } from "framer-motion"
+import { AnimatePresence } from "framer-motion"
 import toast from "react-hot-toast"
 import { AiOutlineCheckCircle, AiOutlineCloseCircle, AiOutlineMail } from "react-icons/ai"
 import { API_URL } from "@/utils/env"

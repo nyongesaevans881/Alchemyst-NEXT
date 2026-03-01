@@ -1,6 +1,5 @@
 "use client"
 
-import { motion } from "framer-motion"
 import { useRouter } from "next/navigation"
 import { FaHeart, FaSpa, FaHandSparkles, FaCamera } from "react-icons/fa"
 import { useEffect } from "react"

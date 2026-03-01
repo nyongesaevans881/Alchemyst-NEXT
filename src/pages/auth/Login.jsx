@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Link from "next/link"
 import { useRouter } from "next/navigation"
-import { motion } from "framer-motion"
 import { FiMail, FiLock, FiEye, FiEyeOff } from "react-icons/fi"
 import toast from "react-hot-toast"
 import { saveAuthData, isAuthenticated } from "../../utils/auth"
@@ -237,12 +236,7 @@ useEffect(() => {
     <>
       <Navbar />
       <div className="bg-background flex items-center justify-center px-4 py-12">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="w-full max-w-md"
-      >
+      <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-secondary mb-2">
             {forgotPasswordMode ? "Reset Password" : "Welcome Back"}
@@ -494,7 +488,7 @@ useEffect(() => {
             </div>
           )}
         </div>
-      </motion.div>
+      </div>
     </div>
       <Footer />
     </>

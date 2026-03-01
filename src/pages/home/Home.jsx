@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import { useRouter } from "next/navigation"
-import { motion } from "framer-motion"
 import { FiSearch, FiMapPin, FiRefreshCw } from "react-icons/fi"
 
 import { useProfiles } from "../../hooks/useProfiles"
@@ -187,22 +186,6 @@ export default function Home() {
     return (
       (filters.serviceType && filters.serviceType !== 'all') ||
       (filters.specificService && filters.specificService !== 'all')
-    )
-  }
-
-  // Helper to check if any filters are active (excluding min age 18)
-  const hasActiveFilters = () => {
-    return (
-      (filters.userType && filters.userType !== 'all') ||
-      (filters.gender && filters.gender !== 'all') ||
-      (filters.bodyType && filters.bodyType !== 'all') ||
-      (filters.breastSize && filters.breastSize !== 'all') ||
-      (filters.serviceType && filters.serviceType !== 'all') ||
-      (filters.sexualOrientation && filters.sexualOrientation !== 'all') ||
-      (filters.ethnicity && filters.ethnicity !== 'all') ||
-      (filters.servesWho && filters.servesWho !== 'all') ||
-      (filters.specificService && filters.specificService !== 'all') ||
-      (filters.ageRange?.max !== null)
     )
   }
 

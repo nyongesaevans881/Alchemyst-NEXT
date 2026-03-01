@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useCallback } from "react"
 import { useRouter } from "next/navigation"
-import { motion } from "framer-motion"
 import {
   FiArrowLeft,
   FiPhone,
@@ -46,7 +45,6 @@ export default function ProfileDetailsPage({ params }) {
   const [copied, setCopied] = useState(false)
   const [similarProfiles, setSimilarProfiles] = useState([])
   const [similarSpas, setSimilarSpas] = useState([])
-  const [loadingSimilar, setLoadingSimilar] = useState(false)
 
   // Enhanced profile lookup with better params response
   const profile = currentProfile ||
@@ -186,7 +184,7 @@ export default function ProfileDetailsPage({ params }) {
       toast.success("Phone number copied!")
       setTimeout(() => setCopied(false), 2000)
       trackInteraction("phone_copy")
-    } catch (error) {
+    } catch (_) {
       toast.error("Failed to copy")
     }
   }
@@ -223,32 +221,6 @@ export default function ProfileDetailsPage({ params }) {
       </span>
     </div>
   );
-
-  const getPackageBadge = () => {
-    if (!profile) return null;
-
-    const packageType = profile.currentPackage?.packageType
-
-    const badges = {
-      elite: {
-        text: "VIP ELITE",
-        gradient: "from-yellow-400 via-orange-500 to-red-500",
-        icon: "👑",
-      },
-      premium: {
-        text: "PREMIUM",
-        gradient: "from-purple-500 via-pink-500 to-rose-500",
-        icon: "⭐",
-      },
-      basic: {
-        text: "BASIC",
-        gradient: "from-gray-600 to-gray-700",
-        icon: "📌",
-      },
-    }
-
-    return badges[packageType] || null
-  }
 
   const renderBadges = () => {
     const packageType = profile.currentPackage?.packageType;

@@ -7,7 +7,6 @@ import { toast } from "react-hot-toast"
 import { BiLocationPlus } from "react-icons/bi"
 import { BsWhatsapp } from "react-icons/bs"
 import { API_URL } from '@/utils/env'
-import { motion } from "framer-motion"
 
 // Helper component for the diagonal ribbon style
 const Ribbon = ({ text, colorClass, icon, top }) => (

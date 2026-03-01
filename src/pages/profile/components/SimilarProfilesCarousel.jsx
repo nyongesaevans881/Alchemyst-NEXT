@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
-import { motion } from "framer-motion"
 import { FiCheckCircle, FiMapPin, FiChevronLeft, FiChevronRight } from "react-icons/fi"
 import { API_URL } from '@/utils/env'
 

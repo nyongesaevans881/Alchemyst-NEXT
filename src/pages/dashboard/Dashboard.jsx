@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
-import { motion } from "framer-motion"
 import { FiAlertCircle, FiCheckCircle, FiXCircle } from "react-icons/fi"
 import EmailVerificationCard from "./components/EmailVerificationCard"
 import ProfileVerificationCard from "./components/ProfileVerificationCard"

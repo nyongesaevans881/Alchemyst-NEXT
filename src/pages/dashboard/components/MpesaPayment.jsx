@@ -9,7 +9,7 @@ import { API_URL, SOCKET_URL } from "@/utils/env"
 const PENDING_PAYMENT_KEY = "pendingMpesaPayment"
 const PAYMENT_EXPIRY_MS = 10 * 60 * 1000 // 10 minutes
 
-export default function MpesaPayment({ onClose, amount, onSuccess, userId }) {
+export default function MpesaPayment({ onClose, amount, onSuccess }) {
   const [phone, setPhone] = useState("")
   const [checkoutRequestId, setCheckoutRequestId] = useState("")
   const [loading, setLoading] = useState(false)
