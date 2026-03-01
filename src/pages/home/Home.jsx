@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { FiSearch, FiMapPin, FiRefreshCw } from "react-icons/fi"
+import { motion } from "framer-motion"
 
 import { useProfiles } from "../../hooks/useProfiles"
 import locationsData from "../../data/counties.json"

@@ -1,6 +1,6 @@
 "use client"
 
-import { AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 import { AiOutlineWarning, AiOutlineInfoCircle, AiOutlineClose } from "react-icons/ai"
 
 export default function ConfirmationModal({ isOpen, onClose, onConfirm, message, severity = "casual", title }) {

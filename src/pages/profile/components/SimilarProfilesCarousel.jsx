@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
 import { FiCheckCircle, FiMapPin, FiChevronLeft, FiChevronRight } from "react-icons/fi"
+import { motion } from "framer-motion"
 import { API_URL } from '@/utils/env'
 
 // Similar Profiles Carousel Component

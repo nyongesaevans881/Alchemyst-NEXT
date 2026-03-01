@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { FiMail, FiLock, FiEye, FiEyeOff, FiCheck, FiX } from "react-icons/fi"
+import { motion } from "framer-motion"
 import toast from "react-hot-toast"
 import { IoCloseCircleOutline } from "react-icons/io5"
 import { API_URL } from '@/utils/env'

@@ -3,8 +3,8 @@
 import { useRouter } from "next/navigation";
 import { FiArrowLeft, FiCalendar, FiUser, FiClock, FiShare2 } from "react-icons/fi";
 import { blogs } from "../../data/blogs";
-import { BlogLayout } from "./components/BlogLayouts";
-import { BlogCard } from "./components/BlogCard";
+import { BlogLayout } from "../../components/blog/BlogLayouts";
+import { BlogCard } from "../../components/blog/BlogCard";
 
 export default function BlogDetailsPage({ params }) {
     const router = useRouter();

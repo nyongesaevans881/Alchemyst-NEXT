@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import { FiSearch, FiFilter, FiGrid, FiList, FiChevronDown } from "react-icons/fi";
-import { BlogCard } from "./components/BlogCard";
+import { BlogCard } from "../../components/blog/BlogCard";
 import { blogs, BLOG_CATEGORIES } from "../../data/blogs";
 import { FaTelegramPlane } from "react-icons/fa";
 

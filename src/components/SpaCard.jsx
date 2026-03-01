@@ -3,6 +3,7 @@ import { FiPhone, FiMessageCircle, FiMapPin, FiCheckCircle, FiCopy } from "react
 import { useState } from "react"
 import { BsWhatsapp } from "react-icons/bs"
 import { toast } from "react-hot-toast"
+import { motion } from "framer-motion"
 import { API_URL } from "@/utils/env"
 
 export default function SpaCard({ profile }) {

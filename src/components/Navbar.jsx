@@ -2,7 +2,7 @@
 import { useEffect, useState, useRef } from "react"
 import Link from "next/link"
 import { useRouter, usePathname } from "next/navigation"
-import { AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 import { clearFilters, setSelectedCounty } from "../redux/uiSlice"
 import { useDispatch } from "react-redux"
 

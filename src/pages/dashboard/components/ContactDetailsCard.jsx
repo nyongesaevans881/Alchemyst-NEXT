@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { motion } from "framer-motion"
 import toast from "react-hot-toast"
 import { AiOutlinePhone, AiOutlineWhatsApp } from "react-icons/ai"
 import { FaTelegramPlane } from "react-icons/fa"

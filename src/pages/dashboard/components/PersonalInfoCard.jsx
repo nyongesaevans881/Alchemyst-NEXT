@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { motion } from "framer-motion"
 import toast from "react-hot-toast"
 
 // It's good practice to define constants for options

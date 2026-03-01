@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { motion } from "framer-motion"
 import { useRouter } from "next/navigation"
 import { FiPhone, FiCopy, FiCheckCircle } from "react-icons/fi"
 import { toast } from "react-hot-toast"

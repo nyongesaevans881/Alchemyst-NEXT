@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
-import ProfileCard from '../../../components/ProfileCard';
-import SpaCard from '../../../components/SpaCard';
-import { BLOG_LAYOUTS } from '../../../data/blogs';
+import ProfileCard from '../ProfileCard';
+import SpaCard from '../SpaCard';
+import { BLOG_LAYOUTS } from '../../data/blogs';
 
 // Confession Layout - Simple text-based
 export const ConfessionLayout = ({ blog }) => {

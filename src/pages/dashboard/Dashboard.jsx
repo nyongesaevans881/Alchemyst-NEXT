@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
 import { FiAlertCircle, FiCheckCircle, FiXCircle } from "react-icons/fi"
+import { motion } from "framer-motion"
 import EmailVerificationCard from "./components/EmailVerificationCard"
 import ProfileVerificationCard from "./components/ProfileVerificationCard"
 import PersonalInfoCard from "./components/PersonalInfoCard"

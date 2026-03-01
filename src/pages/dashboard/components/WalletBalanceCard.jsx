@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { AiOutlineWallet, AiOutlinePlus, AiOutlineReload } from "react-icons/ai"
+import { motion } from "framer-motion"
 import MpesaPayment from "./MpesaPayment"
 
 export default function WalletBalanceCard({ userData, refreshBalance, balanceLoading }) {
